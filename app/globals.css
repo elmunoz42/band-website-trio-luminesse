@@ -1,0 +1,417 @@
+:root {
+  color-scheme: light;
+  --ink: #241a15;
+  --paper: #fbf5ec;
+  --cream: #fffaf0;
+  --clay: #9c4f35;
+  --olive: #5f6f3f;
+  --teal: #0d6b69;
+  --rose: #c96f66;
+  --charcoal: #15130f;
+  --line: rgba(36, 26, 21, 0.16);
+  --shadow: 0 20px 60px rgba(52, 30, 20, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.hero {
+  position: relative;
+  min-height: 90svh;
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+  padding: 28px clamp(18px, 4vw, 64px) 72px;
+  background: var(--charcoal);
+  color: var(--cream);
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(16, 13, 9, 0.88) 0%, rgba(16, 13, 9, 0.56) 45%, rgba(16, 13, 9, 0.18) 100%),
+    linear-gradient(0deg, rgba(16, 13, 9, 0.84) 0%, rgba(16, 13, 9, 0.08) 48%);
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px clamp(18px, 4vw, 64px);
+}
+
+.brand,
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  letter-spacing: 0;
+}
+
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 250, 240, 0.7);
+  border-radius: 50%;
+  font-family: Inter, sans-serif;
+  font-size: 0.76rem;
+}
+
+.navLinks {
+  padding: 8px;
+  border: 1px solid rgba(255, 250, 240, 0.28);
+  border-radius: 999px;
+  background: rgba(21, 19, 15, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.navLinks a {
+  padding: 9px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.navLinks a:hover {
+  background: rgba(255, 250, 240, 0.14);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 100%);
+}
+
+.eyebrow,
+.sectionKicker {
+  margin: 0 0 16px;
+  color: var(--rose);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.hero h1 {
+  max-width: 10ch;
+  font-size: clamp(3.8rem, 7.8vw, 7rem);
+}
+
+.heroLead {
+  max-width: 650px;
+  margin: 18px 0 0;
+  color: rgba(255, 250, 240, 0.86);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.55;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.button,
+.bookingForm button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.button.primary,
+.bookingForm button {
+  background: var(--teal);
+  color: white;
+  box-shadow: 0 14px 34px rgba(13, 107, 105, 0.28);
+}
+
+.button.ghost {
+  border-color: rgba(255, 250, 240, 0.52);
+  color: var(--cream);
+  background: rgba(255, 250, 240, 0.08);
+}
+
+.intro,
+.splitBand,
+.calendarBand,
+.booking {
+  padding: clamp(64px, 9vw, 118px) clamp(18px, 4vw, 64px);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.95fr) minmax(280px, 1.05fr);
+  gap: clamp(28px, 7vw, 88px);
+  align-items: start;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 5vw, 5.1rem);
+}
+
+.intro p:not(.sectionKicker),
+.booking p {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+  line-height: 1.7;
+}
+
+.soundStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-block: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.soundStrip span {
+  min-height: 132px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  border-right: 1px solid var(--line);
+  color: var(--teal);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.3vw, 2.15rem);
+  text-align: center;
+}
+
+.soundStrip span:last-child {
+  border-right: 0;
+}
+
+.splitBand {
+  background: #eee1d2;
+}
+
+.sectionHeader {
+  max-width: 850px;
+  margin-bottom: 42px;
+}
+
+.packageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.packageCard {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(36, 26, 21, 0.18);
+  border-radius: 8px;
+  padding: 26px;
+  background: rgba(255, 250, 240, 0.72);
+  box-shadow: var(--shadow);
+}
+
+.packageCard p,
+.eventRow time {
+  margin: 0;
+  color: var(--olive);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.packageCard h3,
+.eventRow h3 {
+  margin: 24px 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 2.4vw, 2.4rem);
+  font-weight: 500;
+}
+
+.packageCard span,
+.eventRow p {
+  color: rgba(36, 26, 21, 0.78);
+  line-height: 1.6;
+}
+
+.calendarBand {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(28px, 8vw, 92px);
+  background: var(--charcoal);
+  color: var(--cream);
+}
+
+.calendarBand .sectionKicker {
+  color: #e6a56f;
+}
+
+.eventList {
+  display: grid;
+  gap: 14px;
+}
+
+.eventRow {
+  display: grid;
+  grid-template-columns: minmax(112px, 0.28fr) 1fr;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 250, 240, 0.16);
+}
+
+.eventRow h3,
+.eventRow p {
+  margin: 0;
+}
+
+.eventRow p {
+  color: rgba(255, 250, 240, 0.68);
+}
+
+.booking {
+  display: grid;
+  grid-template-columns: 0.9fr minmax(300px, 520px);
+  gap: clamp(28px, 8vw, 96px);
+  align-items: start;
+}
+
+.bookingForm {
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--cream);
+}
+
+.bookingForm label {
+  display: grid;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.bookingForm input,
+.bookingForm textarea {
+  width: 100%;
+  border: 1px solid rgba(36, 26, 21, 0.2);
+  border-radius: 8px;
+  padding: 14px 15px;
+  background: #fffdf7;
+  color: var(--ink);
+  resize: vertical;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    min-height: 86svh;
+    padding-bottom: 48px;
+  }
+
+  .nav {
+    align-items: flex-start;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.3rem, 16vw, 5.4rem);
+  }
+
+  .intro,
+  .calendarBand,
+  .booking {
+    grid-template-columns: 1fr;
+  }
+
+  .soundStrip,
+  .packageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .soundStrip span {
+    min-height: 104px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eventRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .heroActions,
+  .button,
+  .bookingForm button {
+    width: 100%;
+  }
+
+  .brandMark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand span:last-child {
+    max-width: 9ch;
+  }
+}

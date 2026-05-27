@@ -1,0 +1,10 @@
+standards:
+  frontend/next-wordpress-theme:
+    description: "Standards for this Next.js frontend backed by headless WordPress."
+    applies_to:
+      - "app/**"
+      - "components/**"
+      - "lib/**"
+      - "public/**"
+      - "next.config.ts"
+      - "package.json"
