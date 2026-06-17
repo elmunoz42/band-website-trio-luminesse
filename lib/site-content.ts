@@ -29,19 +29,19 @@ const fallbackContent: SiteContent = {
   eyebrow: "Santa Barbara jazz pop soul trio",
   heroTitle: "Soulful music for every occasion",
   heroLead:
-    "Trio Luminesse blends Brazilian rhythms, intimate singer-songwriter storytelling, jazz movement, and soul warmth into performances that feel grounded, generous, and alive.",
+    "Established in Santa Barbara, Trio Luminesse is an engaging acoustic jazz-pop trio blending Bossa Nova, soul, and R&B with the warmth of an intimate living room performance.",
   heroActions: {
     primary: "Book the trio",
     secondary: "Hear the sound"
   },
   aboutTitle: "Warmth, groove, and story for Santa Barbara and beyond",
   aboutBody:
-    "From original compositions to fresh versions of contemporary songs by artists like Billie Eilish, Trio Luminesse creates an atmosphere that is down-to-earth, family-friendly, and memorable. Acoustic sets stay close and conversational; full-band celebrations open into rhythm, harmony, and joy.",
+    "With warm acoustic textures, lush vocal melodies, and laid-back beats, the band playfully blends coastal California charm and acoustic soul. From original compositions to fresh versions of contemporary songs by artists like Billie Eilish, Trio Luminesse creates performances that are fun, deeply engaging, and easy to settle into.",
   soundNotes: [
-    "Brazilian pulse",
-    "Jazz improvisation",
+    "Bossa Nova sway",
+    "Laid-back beats",
     "Soulful vocals",
-    "Modern pop reimagined"
+    "R&B warmth"
   ],
   packages: [
     {
