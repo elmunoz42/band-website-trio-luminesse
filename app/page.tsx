@@ -19,7 +19,6 @@ export default async function Home() {
         <div className="heroShade" />
         <nav className="nav" aria-label="Main navigation">
           <a className="brand" href="#top" aria-label="Trio Luminesse home">
-            <span className="brandMark">TL</span>
             <span>Trio Luminesse</span>
           </a>
           <div className="navLinks">
