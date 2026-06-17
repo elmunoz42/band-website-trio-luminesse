@@ -9,8 +9,8 @@ export default async function Home() {
     <main>
       <section className="hero" aria-label="Trio Luminesse introduction">
         <Image
-          src="/images/trio-luminesse-hero.png"
-          alt="A warm jazz soul trio performance"
+          src="/images/trio-luminesse-live-hero.jpeg"
+          alt="Trio Luminesse performing together with stage lights and flowers"
           fill
           priority
           className="heroImage"

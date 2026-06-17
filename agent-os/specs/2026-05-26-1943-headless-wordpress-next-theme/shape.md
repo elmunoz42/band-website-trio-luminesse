@@ -16,7 +16,7 @@ A new Next.js frontend theme for Trio Luminesse, designed to pair with a headles
 - Use Next.js App Router for the frontend.
 - Keep WordPress REST integration in `lib/site-content.ts`.
 - Use local fallback content until `WORDPRESS_API_URL` is available.
-- Store the placeholder hero image in `public/images/trio-luminesse-hero.png`.
+- Use the real Trio Luminesse photo in `public/images/trio-luminesse-live-hero.jpeg` as the hero image.
 - Track specs using the Agent OS project structure under `agent-os/`.
 
 ## Out of Scope For This Spec

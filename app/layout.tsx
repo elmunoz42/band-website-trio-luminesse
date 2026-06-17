@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Trio Luminesse",
     description: "Soulful music for weddings, gatherings, and community events.",
-    images: ["/images/trio-luminesse-hero.png"]
+    images: ["/images/trio-luminesse-live-hero.jpeg"]
   }
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning>
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GWT6H6LM1B"

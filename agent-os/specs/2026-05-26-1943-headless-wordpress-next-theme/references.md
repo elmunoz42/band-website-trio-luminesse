@@ -11,5 +11,5 @@
 - `app/page.tsx`
 - `app/globals.css`
 - `lib/site-content.ts`
-- `public/images/trio-luminesse-hero.png`
+- `public/images/trio-luminesse-live-hero.jpeg`
 - `README.md`

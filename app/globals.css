@@ -53,15 +53,15 @@ textarea {
 
 .heroImage {
   object-fit: cover;
-  object-position: center;
+  object-position: 72% center;
 }
 
 .heroShade {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(16, 13, 9, 0.88) 0%, rgba(16, 13, 9, 0.56) 45%, rgba(16, 13, 9, 0.18) 100%),
-    linear-gradient(0deg, rgba(16, 13, 9, 0.84) 0%, rgba(16, 13, 9, 0.08) 48%);
+    linear-gradient(90deg, rgba(16, 13, 9, 0.96) 0%, rgba(16, 13, 9, 0.86) 34%, rgba(16, 13, 9, 0.42) 62%, rgba(16, 13, 9, 0.08) 100%),
+    linear-gradient(0deg, rgba(16, 13, 9, 0.74) 0%, rgba(16, 13, 9, 0.2) 48%, rgba(16, 13, 9, 0.28) 100%);
 }
 
 .nav {
