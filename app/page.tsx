@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 import { getSiteContent } from "@/lib/site-content";
 
 export default async function Home() {
@@ -96,25 +97,22 @@ export default async function Home() {
           <h2>Bring Trio Luminesse to your next gathering</h2>
           <p>
             Share the date, location, event type, and the feeling you want in the room.
-            The frontend is ready for a WordPress form embed, custom REST endpoint, or
-            SiteGround email handler.
+            We will follow up with availability, lineup options, and the easiest next
+            step for your event.
           </p>
         </div>
-        <form className="bookingForm">
-          <label>
-            Name
-            <input name="name" type="text" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input name="email" type="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Event details
-            <textarea name="message" rows={5} placeholder="Date, location, audience, and vibe" />
-          </label>
-          <button type="button">Start the conversation</button>
-        </form>
+        <div className="bookingForm">
+          <Script
+            src="https://js-na2.hsforms.net/forms/embed/246518428.js"
+            strategy="afterInteractive"
+          />
+          <div
+            className="hs-form-frame"
+            data-region="na2"
+            data-form-id="6e0abaf6-545c-46f3-ab66-78973ae0382f"
+            data-portal-id="246518428"
+          />
+        </div>
       </section>
     </main>
   );

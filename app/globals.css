@@ -332,31 +332,16 @@ h2 {
 
 .bookingForm {
   display: grid;
-  gap: 16px;
+  min-height: 420px;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 24px;
   background: var(--cream);
 }
 
-.bookingForm label {
-  display: grid;
-  gap: 8px;
-  font-size: 0.84rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.bookingForm input,
-.bookingForm textarea {
+.bookingForm .hs-form-frame {
   width: 100%;
-  border: 1px solid rgba(36, 26, 21, 0.2);
-  border-radius: 8px;
-  padding: 14px 15px;
-  background: #fffdf7;
-  color: var(--ink);
-  resize: vertical;
+  min-height: 360px;
 }
 
 @media (max-width: 860px) {
@@ -401,8 +386,7 @@ h2 {
 
 @media (max-width: 520px) {
   .heroActions,
-  .button,
-  .bookingForm button {
+  .button {
     width: 100%;
   }
 
