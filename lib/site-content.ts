@@ -36,7 +36,7 @@ const fallbackContent: SiteContent = {
   },
   aboutTitle: "Warmth, groove, and story for Santa Barbara and beyond",
   aboutBody:
-    "With warm acoustic textures, lush vocal melodies, and laid-back beats, the band playfully blends coastal California charm and acoustic soul. From original compositions to fresh versions of contemporary songs by artists like Billie Eilish, Trio Luminesse creates performances that are fun, deeply engaging, and easy to settle into.",
+    "With warm acoustic textures, lush vocal melodies, and laid-back beats, the band playfully blends coastal California charm and acoustic soul. From original compositions to fresh versions of contemporary songs by artists like Corinne Bailey Rae and Lenny Kravitz, Trio Luminesse creates performances that are fun, deeply engaging, and easy to settle into.",
   soundNotes: [
     "Bossa Nova sway",
     "Laid-back beats",
