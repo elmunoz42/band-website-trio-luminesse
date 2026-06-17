@@ -52,8 +52,8 @@ textarea {
 }
 
 .heroImage {
-  object-fit: cover;
-  object-position: 72% center;
+  object-fit: contain;
+  object-position: right center;
 }
 
 .heroShade {
